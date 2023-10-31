@@ -27,13 +27,9 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
-/**
- * Implements the relevant portions of the SocketChannel interface with the SSLEngine wrapper.
- */
 public class SSLSocketChannel2 implements ByteChannel, WrappedByteChannel {
-	/**
-	 * This object is used to feed the {@link SSLEngine}'s wrap and unwrap methods during the handshake phase.
-	 **/
+
+	
 	protected static ByteBuffer emptybuffer = ByteBuffer.allocate( 0 );
 
 	protected ExecutorService exec;
